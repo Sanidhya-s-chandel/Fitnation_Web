@@ -29,3 +29,20 @@ html, body {
 .nav-responsive{
   transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955) 1s;
 }
+
+.overlays2{
+  background-image: linear-gradient(to top, black 10%, transparent);
+}
+
+.zimba h1{
+  transform: rotate(-90deg);
+}
+
+.flx{
+  filter: brightness(80%);
+  transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 1s;
+}
+
+.flx:hover{
+  scale: 1.1;
+}
