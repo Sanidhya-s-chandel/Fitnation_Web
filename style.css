@@ -15,3 +15,17 @@ html, body {
     background-color: #000000b2;
     background-image: linear-gradient(to right,black 25%,transparent 60%);
 }
+
+@media (max-width:640px) {
+  .nav h1{
+      display: none;
+  }
+
+  .nav .menu{
+      display: initial;
+  }
+}
+
+.nav-responsive{
+  transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955) 1s;
+}

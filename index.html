@@ -10,45 +10,54 @@
     <link rel="shortcut icon" href="https://i.pinimg.com/564x/cd/a2/08/cda2081dfd2b1af5c0444a032294965c.jpg" type="image/x-icon">
 </head>
 <body>
-    <div class="main">
-        <div class="top h-screen w-full bg-[url('./top-bg.jpg')] bg-center bg-cover">
-            <div class="overlays h-full w-full">
-                <div class="nav h-[20vh] bg-transparent w-full flex items-center justify-between p-8">
-                    <div class="nav1 h-full w-[20%]">
+    <div class="main overflow-x-hidden">
+        <div class="top h-screen w-full bg-[url('./top-bg.jpg')] bg-right max-sm:bg-[url('./togr.jpg')] bg-cover">
+            <div class="overlays max-sm:bg-transparent h-full w-full">
+                <div class="nav-responsive w-full absolute z-10 top-[-100%] bg-black flex justify-between p-6 text-left">
+                    <div class="flex flex-col gap-4 capitalize">
+                        <h1 class="cursor-pointer text-xl">Services</h1>
+                        <h1 class="cursor-pointer text-xl">facility</h1>
+                        <h1 class="cursor-pointer text-xl">merchandise</h1>     
+                        <h1 class="cursor-pointer text-xl">contact Us</h1>     
+                    </div>
+                </div>
+                <div class="nav h-[20vh] max-sm:h-[18vh] relative bg-transparent w-full flex items-center justify-between p-8">
+                    <div class="nav1 h-full w-[20%] max-sm:w-[40%]">
                         <img src="https://i.pinimg.com/564x/0d/88/1b/0d881b3eca041d82edc93206c3378224.jpg" alt="logo" class="h-full w-full object-cover">
                     </div>
-                    <div class="nav2 capitalize text-xl flex items-center gap-12">
+                    <div class="nav2 capitalize text-xl flex items-center max-sm:justify-center gap-12">
                         <h1 class="cursor-pointer">Services</h1>
                         <h1 class="cursor-pointer">facility</h1>
                         <h1 class="cursor-pointer">merchandise</h1>
-                        <button class="uppercase font-semibold text-xl bg-[#96FC04] text-black px-3 rounded-tl-3xl hover:bg-[#325401] py-2">join now</button>
+                        <button class="uppercase font-semibold text-xl bg-[#96FC04] text-black px-3 rounded-tl-3xl max-sm:rounded max-sm:text-xs hover:bg-[#325401] py-2">join now</button>
+                        <i class="ri-menu-fill menu text-3xl z-10 hover:bg-[#96FC04] max-sm:text-2xl hover:text-black px-2 py-1 rounded-full hidden"></i>
                     </div>
                 </div>
-                <div class="top-bottom w-full flex items-center justify-between p-12">
-                    <div class="dets ml-6 p-8">
-                        <h1 class="text-7xl">Unleash Your</h1>
-                        <h1 class="text-7xl">Inner Athlete</h1>
-                        <p class="text-base mt-8 w-[55%]">We are dedicated to helping you transform your body and mind through the powers of fitness</p>
-                        <div class="btns mt-16 flex items-center gap-16">
+                <div class="top-bottom w-full flex max-sm:flex-col max-sm:mt-20 items-center max-sm:p-4 justify-between p-12">
+                    <div class="dets ml-6 max-sm:ml-0 max-sm:p-4 p-8">
+                        <h1 class="text-7xl max-sm:text-4xl">Unleash Your</h1>
+                        <h1 class="text-7xl max-sm:text-4xl">Inner Athlete</h1>
+                        <p class="text-base mt-8 w-[55%] max-sm:w-[100%]">We are dedicated to helping you transform your body and mind through the powers of fitness</p>
+                        <div class="btns mt-16 flex items-center max-sm:gap-2 gap-12">
                             <div class="flex">
-                                <button class="uppercase font-semibold text-base bg-[#96FC04] text-black px-3 rounded-tl-3xl py-2">join now</button>
-                                <button class="font-semibold text-base bg-[#325401] text-white px-3 py-2">49$/month</button>
+                                <button class="uppercase font-semibold text-base max-sm:px-4 max-sm:py-3 max-sm:text-xs bg-[#96FC04] text-black px-3 rounded-tl-3xl py-2">join now</button>
+                                <button class="font-semibold text-base bg-[#325401] max-sm:px-2 max-sm:py-2 max-sm:text-xs text-white px-3 py-2">49$/month</button>
                             </div>
-                            <button class="uppercase font-semibold border text-base bg-transparent text-white px-6 rounded-tl-xl hover:bg-white hover:text-black py-2">join free trial</button>
+                            <button class="uppercase max-sm:text-xs max-sm:rounded-tr-3xl max-sm:rounded-tl max-sm:px-3 max-sm:py-3 font-semibold border text-base bg-transparent text-white px-6 rounded-tl-xl hover:bg-white hover:text-black py-2">join free trial</button>
                         </div>
                     </div>
-                    <div class="follows h-[50vh] relative flex flex-col justify-end w-1/3 p-8">
-                        <img src="./avatars-removebg-preview.png" alt="" class="absolute left-[-25%] top-[35%]">
+                    <div class="follows h-[50vh] max-sm:h-[25vh] relative flex flex-col justify-end w-1/3 max-sm:w-full max-sm:text-right max-sm:p-2 p-8">
+                        <img src="./avatars-removebg-preview.png" alt="" class="absolute left-[-25%] max-sm:left-[28%] max-sm:top-[5%] top-[35%]">
                         <h1 class="text-4xl font-semibold">500+</h1>
                         <h1>Members Happy</h1>
                     </div>
                 </div>
             </div>
-            <div class="h-[40vh] flex items-center justify-between p-16">
-                <div class="h-full w-1/2 text-6xl capitalize flex items-center px-6">
+            <div class="h-[40vh] flex max-sm:flex-col items-center justify-between p-16 max-sm:p-6">
+                <div class="h-full w-1/2 max-sm:w-full text- mt-4 max-sm:mx-auto text-6xl max-sm:text-2xl capitalize flex items-center px-6">
                     <h1>transform your <br> fitness Journey</h1>
                 </div>
-                <div class="h-full w-1/2 flex items-center text-lg">
+                <div class="h-full w-1/2 max-sm:w-full text-center mt-4 max-sm:text-sm flex items-center text-lg">
                     <p class="text-[#7F7F7F] w-[75%]">offers customized workout programs designed to help clients achieve their fitness goals, such as weight loss, strength and conditioning and body shaping.</p>
                 </div>
             </div>
