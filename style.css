@@ -46,3 +46,7 @@ html, body {
 .flx:hover{
   scale: 1.1;
 }
+
+.M2-right .M2-right-linear{
+  background-image: linear-gradient(to top, black 40%, transparent);
+}
