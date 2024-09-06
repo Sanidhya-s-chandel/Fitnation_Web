@@ -50,3 +50,26 @@ html, body {
 .M2-right .M2-right-linear{
   background-image: linear-gradient(to top, black 40%, transparent);
 }
+
+/* .slider{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 9;
+  transform: translateX(100%); 
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+} */
+
+.slider{
+  overflow-x: auto;
+  width: max-content;
+  overflow-y: hidden;
+  z-index: 9;
+}
+
+.products .p1{
+  background-image: linear-gradient(to top, #141414 30%, transparent);
+}
