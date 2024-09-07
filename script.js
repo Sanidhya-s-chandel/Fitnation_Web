@@ -79,3 +79,35 @@ gsap.to(".products .slider",{
         duration:2,
     }
 })
+
+const pics = [
+    "https://i.pinimg.com/564x/48/96/c2/4896c29a479322f05bf34cb69393ba4a.jpg",
+    "https://i.pinimg.com/736x/0f/4e/bd/0f4ebd3ee380f678d1cd9b009a1f5561.jpg",
+    "https://i.pinimg.com/736x/3a/31/ed/3a31ed9bc6dad9abf445018971451342.jpg",
+    "https://i.pinimg.com/736x/29/6d/45/296d4560392919bb0d830d03e3810ef7.jpg",
+    "https://i.pinimg.com/736x/bc/f8/93/bcf8935c1cdf1ad5c3c3d117b5d4f91a.jpg",
+    "https://i.pinimg.com/736x/16/9b/01/169b01433eac1872902e8e194d60e78d.jpg"
+];
+
+let i = 0;
+const image = document.querySelector(".M1-img");
+const next = document.querySelector(".next");
+const prev = document.querySelector(".prev");
+
+function changeImage(index) {
+    image.style.opacity = 0; // Start the fade out effect
+    setTimeout(() => {
+        image.setAttribute("src", pics[index]);
+        image.style.opacity = 1; // Fade back in after the image has changed
+    }, 1000); // This should match the duration of the transition
+}
+
+next.addEventListener("click", () => {
+    i = (i + 1) % pics.length;
+    changeImage(i);
+});
+
+prev.addEventListener("click", () => {
+    i = (i - 1 + pics.length) % pics.length;
+    changeImage(i);
+});

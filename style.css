@@ -73,3 +73,7 @@ html, body {
 .products .p1{
   background-image: linear-gradient(to top, #141414 30%, transparent);
 }
+
+.M1-left-bottom .M1-img{
+  transition: opacity 1s ease-in-out;
+}
